@@ -1,0 +1,30 @@
+.clear_button {
+    display: flex;
+    align-items: center;
+    outline: none;
+    width: 100%;
+    text-align: left;
+    background-color: #fff;
+    border-top: none;
+    border-right: 3px solid #f4f4f6;
+    border-left: 3px solid #f4f4f6;
+    border-bottom: 3px solid #f4f4f6;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    height: 55px;
+}
+
+.clear_button span {
+    cursor: pointer;
+    margin-left: 25px;
+    color: #999999;
+    -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.no_empty span {
+    color: #3C71FF;
+}

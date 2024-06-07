@@ -1,0 +1,36 @@
+.accordion {
+    margin-bottom: 10px;
+}
+
+.accordion .accordion-item {
+    border: 3px solid #f4f4f6
+}
+
+.accordion .accordion-item .accordion-button {
+    background-color: #fff;
+    font-weight: 600;
+    color: #3C71FF;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.accordion .accordion-item .accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion .accordion-item .accordion-button::after {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-image: url('../../../public/icons/down_2.svg');
+}
+
+.accordion .accordion-item .accordion-collapse .accordion-body ul {
+    list-style-type: none;
+}
+
+.accordion .accordion-item .accordion-collapse .accordion-body li a {
+    font-weight: 600;
+    color: #3C71FF; 
+    text-decoration: none;
+}

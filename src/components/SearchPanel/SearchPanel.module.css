@@ -1,0 +1,35 @@
+.label_for_input {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-top: 3px solid #f4f4f6;
+    border-left: 3px solid #f4f4f6;
+    border-right: 3px solid #f4f4f6;
+}
+
+.label_for_input::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: 0;
+    width: 20px;
+    background: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIzMnB4IiBoZWlnaHQ9IjMycHgiIHZpZXdCb3g9IjAsMCwyNTYsMjU2Ij48ZyBmaWxsPSIjZDBkMGRiIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAxODczLC0wLjI5NjA1KSBzY2FsZSg4LDgpIj48ZyBpZD0ic2VhcmNoIj48cGF0aCBkPSJNMjkuNzEsMjguMjlsLTYuNSwtNi41aC0wLjA3YzQuMTYyOTUsLTQuOTA4NDcgMy43MTIzLC0xMi4yMjcwNyAtMS4wMjE0MSwtMTYuNTg3NzFjLTQuNzMzNzEsLTQuMzYwNjQgLTEyLjA2NDY0LC00LjIxMDM0IC0xNi42MTU2NCwwLjM0MDY2Yy00LjU1MSw0LjU1MSAtNC43MDEzLDExLjg4MTkzIC0wLjM0MDY2LDE2LjYxNTY0YzQuMzYwNjQsNC43MzM3MSAxMS42NzkyNSw1LjE4NDM3IDE2LjU4NzcxLDEuMDIxNDFjMCwwIDAsMC4wNSAwLDAuMDdsNi41LDYuNWMwLjE4Nzc3LDAuMTg5MzEgMC40NDMzNiwwLjI5NTggMC43MSwwLjI5NThjMC4yNjY2NCwwIDAuNTIyMjMsLTAuMTA2NDkgMC43MSwtMC4yOTU4YzAuMjA3MjMsLTAuMTgzNDggMC4zMjkxNSwtMC40NDQ2NCAwLjMzNjczLC0wLjcyMTMyYzAuMDA3NTgsLTAuMjc2NjggLTAuMDk5ODUsLTAuNTQ0MTMgLTAuMjk2NzMsLTAuNzM4Njh6TTE0LDI0Yy01LjUyMjg1LDAgLTEwLC00LjQ3NzE1IC0xMCwtMTBjMCwtNS41MjI4NSA0LjQ3NzE1LC0xMCAxMCwtMTBjNS41MjI4NSwwIDEwLDQuNDc3MTUgMTAsMTBjMCw1LjUyMjg1IC00LjQ3NzE1LDEwIC0xMCwxMHoiPjwvcGF0aD48L2c+PC9nPjwvZz48L3N2Zz4=") center / contain no-repeat;
+}
+
+.label_for_input input {
+    padding: 0 0 0 35px;
+    border: 2px solid #f4f4f6;
+    height: 52.59px;
+    width: 100%;
+    outline: none;
+    border-radius: 6px;
+}
+
+.label_for_input input::placeholder {
+    opacity: .4;
+    font-weight: 600;
+}
