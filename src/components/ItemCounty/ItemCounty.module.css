@@ -1,0 +1,98 @@
+.counter {
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 0 10px;
+    line-height: 50px;
+    -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.flag {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 20px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.country_name {
+    margin-left: 33px;
+    font-weight: 500;
+}
+
+.counter input[type="checkbox"]:checked,
+.counter input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.counter input[type="checkbox"]:checked + label,
+.counter input[type="checkbox"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.counter input[type="checkbox"]:checked + label::before,
+.counter input[type="checkbox"]:not(:checked) + label::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border: 2px solid #dddddd;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.counter input[type="checkbox"]:checked + label::after,
+.counter input[type="checkbox"]:not(:checked) + label::after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    /* tick */
+    left: 4px;
+    top: 6px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.counter input[type="checkbox"]:checked + label::before {
+    border: none;
+    background-color: #304fdc;
+}
+
+.counter input[type="checkbox"]:checked + label::after {
+    opacity: 1;
+}
+
+.counter input[type="checkbox"]:not(:checked) + label::after {
+    opacity: 0;
+}
+
+.select_country {
+    background-color: #edf4ff;
+    color: #3C71FF;
+}
