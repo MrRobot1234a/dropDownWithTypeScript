@@ -15,7 +15,6 @@ import classes from './App.module.css'
 
 
 function App() {
-  const countries: structureCountry[] = []
 
   const dispatch = useDispatch()
 
@@ -23,14 +22,12 @@ function App() {
     axios
         .get<structureCountry[]>('../public/countries/all.json')
         .then(response => {
-            countries.splice(0, countries.length)
-            response.data.forEach((item) => countries.push(item))
-            dispatch(setCountries({countries: countries}))
+            dispatch(setCountries({countries: response.data}))
         })
   }, [])
 
   return (
-    <div className="container" key={1}>
+    <div className="container">
       <div className={classes.wrapper}>
         <Acrdn />
         <SearchPanel />

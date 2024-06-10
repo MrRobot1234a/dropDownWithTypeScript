@@ -56,7 +56,7 @@ export default function ListOfCountries() {
 
     function renderListOfCountries(): JSX.Element[] {
         if (template) {
-            const filteredCountries = countries.filter(item => item.name.common.indexOf(template) > -1)
+            const filteredCountries = countries.filter(item => item.name.common.toLowerCase().indexOf(template.toLowerCase()) > -1)
             return renderListCountries(filteredCountries)
         } else {
             return renderListCountries(countries)
